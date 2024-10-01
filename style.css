@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg: #cece92;
+    --primary: #021526;
+    --secondary: #058cf3;
+}
+
+body {
+    font-family: Poppins;
+    background: var(--bg);
+    color: var(--primary);
+}
+
+button,
+li,
+a,
+input {
+    font-family: Poppins;
+    font-size: 16px;
+    color: var(--primary);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+.app {
+    width: 80%;
+    margin: auto;
+}
+
+.head {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.head h2 {
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.head p {
+    font-size: 18px;
+    color: var(--secondary);
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs input {
+    border: none;
+    padding: 9px 20px;
+    border-left: 4px solid var(--secondary);
+    outline: none;
+    box-shadow: 0;
+    transition: .2s;
+}
+
+.inputs input:focus {
+    box-shadow: 0 0 1000px 1000px rgba(0, 0, 0, 0.7);
+}
+
+.inputs div {
+    display: flex;
+}
+
+.inputs button {
+    border: none;
+    padding: 12px 9px;
+    width: 50%;
+    background: var(--secondary);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.inputs button:hover {
+    background: var(--primary);
+    color: #fff;
+}
+
+
+.outputs {
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #efefef67;
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+
+}
+
+.outputs p {
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    background: var(--secondary);
+    color: #fff;
+    cursor: pointer;
+}
+
+.outputs ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+.outputs ul li {
+    padding: 10px;
+    border: 1px solid var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .3s all;
+}
+
+.outputs ul li span {
+    cursor: pointer;
+}
+
+.outputs ul li i {
+    font-size: 18px;
+    color: var(--primary);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.outputs ul li:hover {
+    transform: scale(1.1);
+    background: var(--bg);
+}
+
+.outputs ul li span:hover {
+    color: var(--secondary);
+}
+
+.outputs ul li i:hover {
+    transform: scale(1.2);
+    color: rgba(220, 31, 31, 0.829);
+}
